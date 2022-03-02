@@ -1,2 +1,2 @@
 # AstroCore
-The best core for free in Spigot
+This plugin gives you a lot of customizable utilities for your server
