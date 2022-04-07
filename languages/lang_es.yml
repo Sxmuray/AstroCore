@@ -1,0 +1,126 @@
+
+#
+#
+#
+
+join_motd:
+  message:
+    - ""
+    - "&7&m-----------------------------------------------------"
+    - ""
+    - "                           &b&lAstroCore &7(v1.0.0)"
+    - "                       &fDesarrollado por &a@zSxmuray"
+    - ""
+    - " &8&aDiscord: &fhttps://discord.gg/XSWWCEhURx"
+    - " &8&aTwitter: &fhttps://twitter.com/zSxmuray"
+    - " &8&aGithub: &fhttps://github.com/Sxmuray"
+    - " &8&aSpigot: &fhttps://www.spigotmc.org/members/sxmuray.1339322/"
+    - ""
+    - "  &7(Todos los derechos son reservados por Aquatic Studios)"
+    - ""
+    - "&7&m-----------------------------------------------------"
+    - ""
+
+#
+#
+#
+
+inv_full: "&cTu inventario se encuentra lleno"
+already_item: "&cYa tienes este item en tu inventario"
+wait_clicking_item: "&cEspera unos segundos para volver usar el item"
+lobby_set: "&aEl spawn ha sido colocado correctamente"
+lobby_error: "&cAcaba de pasar un error ejecuta &7/astrocore setspawn"
+spawn: "&aAcabas de teletransportarte al spawn"
+no_permission: "&cNo tienes permisos para ejecutar este tipo de comandos"
+join_server: "%vault_prefix% %astrocore_name% &fingreso al servidor"
+quit_server: "%vault_prefix% %astrocore_name% &fsalio del servidor"
+deny_message: "&cNo esta permitido enviar este tipo de mensajes"
+when_breaking: "&cNo puedes romper los bloques en este sitio"
+command_disable: "&cEste comando actualmente se encuentra bloqueado"
+unknown_command: "&cEl comando ejecutado no existe, ejecuta &7/astrocore help"
+not_send_links: "&cNo se permite enviar links de otros sitios en el servidor"
+not_send_works: "&cNo se acepta este tipo de vocabulario en el servidor"
+send_works_add: "&fAcabas de bloquear un nuevo vocabulario &7(%astro_work%)"
+set_void_spawn: "&aEl sitio del void fue seteado correctamente"
+set_void_spawn_error: "&cAcaba de suceder un error revisa la consola"
+set_void_world: "&aAcabas de setear el mundo del void correctamente"
+teleport_void_world: "&aAcabas de ser enviado al spawn principal"
+set_void_error: "&cSucedio un error ejecuta &7/astrovoid setvoid (world)"
+
+#
+#
+#
+
+server:
+  full: "&cServidor lleno &7(Adquiere un rango para poder ingresar)"
+  whitelist: "&cEl server se encuentra con la lista activada"
+
+#
+#
+#
+
+menu_staff:
+  row: 2
+  name: "&8AstroCore > StaffMenu"
+  head: "&b%astrocore_staff%"
+  lore:
+    - ""
+    - "&a%player_last_join_date%"
+    - ""
+    - "&fRango: %vault_prefix%"
+    - "&fTiempo: &a%player_time%"
+    - "&fMundo: &a%player_world%"
+    - ""
+    - "&7Implementa mas cosas en la config"
+
+#
+#
+#
+
+# Command:
+#   Text: "&bAquatic"
+#   Hover: "&fClick for Command"
+#   Action: COMMAND
+#   Command: "tell: &b[AstroCore] &fSxmuray"
+#
+# Social:
+#   Text: "&aAquatic"
+#   Hover: "Haz click para ingresar a Aquatic"
+#   Url: "https://discord.gg/XSWWCEhURx"
+#   Action: URL
+
+join_links:
+  message:
+    - ""
+    - "                  &b&lAstroCore &7(v1.0.0)"
+    - "&f            Redes Sociales &a(Click Derecho)"
+content:
+  twitter:
+    text: "     &b&lTwitter &8"
+    hover: "&aHaz click para ingresar a &b&lTwitter"
+    action: URL
+    link: "https://twitter.com/zSxmuray"
+  web:
+    text: "&6&lWebsite &8"
+    hover: "&aHaz click para ingresar a &6&lWebsite"
+    action: URL
+    link: "https://www.spigotmc.org/members/sxmuray.1339322/"
+  shop:
+    text: "&e&lGithub &8"
+    hover: "&aHaz click para ingresar a &e&lGithub"
+    action: URL
+    link: "https://github.com/Sxmuray"
+  discord:
+    text: "&9&lDiscord"
+    hover: "&aHaz click para ingresar a &9&lDiscord"
+    action: URL
+    link: "https://discord.gg/XSWWCEhURx"
+
+# DO NOT TOUCH!
+version: "9.0.1"
+
+#  
+#  
+#  
+#
+# (Terms and Service) - All rights to the plugin belongs to Aquatic Studios (Sxmuray)
