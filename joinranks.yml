@@ -1,0 +1,15 @@
+join_ranks:
+  owner:
+    sound: LEVEL_UP:10:2
+    join_message: "%astrocore_prefix% %astrocore_name% &fjoin the server"
+    quit_message: "%astrocore_prefix% %astrocore_name% &fquit the server"
+    superfly:
+      automatic: true
+      levitation: 5
+    titles:
+      enabled: false
+      title: "&c&lOWNER"
+      subtitle: "&fjust entered the server"
+    actionbar:
+      enabled: false
+      message: "%astrocore_prefix% %astrocore_name% &fjoin the server"

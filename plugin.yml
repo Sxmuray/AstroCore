@@ -1,0 +1,53 @@
+#                                                           Developed by Sxmuray
+#                                                     (Aquatic Studios @ (C) 2019-2022)
+
+name: AstroCore
+version: 1.0.0
+author: Sxmuray
+main: aquatic.sxmuray.astrocore.AstroCore
+website: https://www.spigotmc.org/members/sxmuray.1339322/
+softdepend:
+  - PlaceholderAPI
+  - Vault
+  - LuckPerms
+  - MVdWPlaceholderAPI
+description: Amazing complemented with multiple things for your server
+
+commands:
+  tp:
+    description: Command so you can teleport to any user
+  message:
+    description: Command to be able to talk to any user in a hidden mode
+  msg:
+    description: Command to be able to talk to any user in a hidden mode
+  staffsonline:
+    description: Command to open a special menu to see the connected staffs
+  broadcast:
+    description: Command to send a message to the entire server
+  staffchat:
+    description: Command to send messages only for the staff
+    aliases: [sc]
+  chatclear:
+    description: Command to clean chat completely
+    aliases: [cclear]
+  v:
+    description: Command to activate an invisibility mode
+  bc:
+    description: Command to send a message to the entire server
+  alert:
+    description: Command to send a message to the entire server
+  gamemode:
+    description: Command to change your game mode
+  gm:
+    description: Command to change your game mode
+  vanish:
+    description: Command to activate an invisibility mode
+  fly:
+    description: Command to activate your flight mode
+    aliases: [superfly]
+  astrocore:
+    description: Main command to use the AstroCore plugin
+    aliases: [astro, ac]
+  astrovoid:
+    description: Command to implement a void for your main lobby
+    aliases: [ void ]

@@ -1,0 +1,45 @@
+titles:
+  switch: true
+  interval: 500
+  list:
+    example:
+      fade_in: 20
+      stay: 50
+      fade_out: 10
+      title: "&b&lAstroCore"
+      subtitle: "&fSxmuray#8106"
+
+actionbar:
+  switch: true
+  interval: 600
+  list:
+    example:
+      stay: 50
+      message: "&fAll rights are reserved by &b&lAquatic Studios"
+
+bossbar:
+  switch: true
+  interval: 600
+  list:
+    example:
+      color: PURPLE # Version 1.9+
+      style: NOTCHED_20 # Version 1.9+
+      seconds: 10
+      message: "&fPowered by &b&lAquatic Studios"
+
+announce:
+  switch: true
+  interval: 600
+  list:
+    example:
+      - ""
+      - "&r                                 &b&lAstroCore &7(v1.0.0)"
+      - "&r                            &fDeveloped by &a@zSxmuray"
+      - ""
+      - "&f If you have any problem or bug you can check it on the Discord"
+      - "&f    from Aquatic Studios click this link: &bdiscord.gg/XSWWCEhURx"
+      - ""
+      - "                 &a¡Thank you for downloading AstroCore!"
+      - ""
+      - " &7(Do not forget to leave your review in the discord and in Spigot)"
+      - ""

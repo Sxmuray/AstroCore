@@ -1,0 +1,26 @@
+settings:
+  tab_list: true
+  tab_player: true
+  tag_player: true
+  time_update: 5
+
+tabulator:
+  header: "/n &b&lAstroCore &7(v1.0.0) /n/n &f¡Welcome &a%player_name% &fto the Network! /n"
+  footer: "/n &fDeveloper: &a@zSxmuray /n &fDiscord: &adiscord.gg/XSWWCEhURx /n/n &fAll rights are reserved by &b&lAquatic Studios /n"
+
+groups:
+  aquatic:
+    tab_prefix: "%vault_prefix% &f"
+    tag_prefix: "%vault_prefix% &f"
+    tab_suffix: "&f"
+    tag_suffix: "&f"
+  default:
+    tab_prefix: "%vault_prefix% &f"
+    tag_prefix: "%vault_prefix% &f"
+    tab_suffix: "&f"
+    tag_suffix: "&f"
+  owner:
+    tab_prefix: "%vault_prefix% &f"
+    tag_prefix: "%vault_prefix% &f"
+    tab_suffix: "&f"
+    tag_suffix: "&f"

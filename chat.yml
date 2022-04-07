@@ -1,0 +1,12 @@
+chat:
+  switch: false
+  groups:
+    default: "{prefix} {name} &8» &f{message}"
+    aquatic: "{prefix} {name} &8» &f{message}"
+
+antiad:
+  switch: true
+  cooldown: 1
+  no_send_links: "&b[AstroCore] &cThese characters are not allowed to be sent on the server"
+  message:
+    - "&b[AstroCore] &cDo not send messages so fast in the chat you could be muted"

@@ -1,0 +1,16 @@
+scoreboard:
+  title: "&b&lAstroCore"
+  update: 5
+  lines:
+    - "&r          &7%astrocore_date%"
+    - "%empty%"
+    - "&fName: &a%astrocore_name%"
+    - "&fCoins: &e0"
+    - "&fRank: &a%vault_prefix%"
+    - "%empty%"
+    - "&7• &fLobby: &e#1"
+    - "&7• &fOnline: &a%astrocore_online%/%server_max_players%"
+    - "%empty%"
+    - "&fLatency: &a%player_ping%"
+    - "%empty%"
+    - "&e    play.aquatic.org"

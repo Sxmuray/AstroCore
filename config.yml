@@ -1,0 +1,309 @@
+#░█▀▀█ ░█▀▀▀█ ░█▄─░█ ░█▀▀▀ ▀█▀ ░█▀▀█
+#░█─── ░█──░█ ░█░█░█ ░█▀▀▀ ░█─ ░█─▄▄
+#░█▄▄█ ░█▄▄▄█ ░█──▀█ ░█─── ▄█▄ ░█▄▄█
+
+settings:
+  prefix: "&b[AstroCore] &r"
+  anti_works_enabled: true
+  commands: true
+  announces: false
+  per_world_tab: true
+  per_world_chat: true
+  join_links: false
+  join_motd: true
+  join_ranks: true
+  join_items: true
+  quit_switch: false
+  join_switch: false
+  chat_clear_join: true
+  language_switch: true
+  language_yaml: lang_en
+  scoreboard: true
+  unknown_enabled: false
+  disable_commands: true
+  message_block_break: false
+
+server_list_motd:
+  switch: true
+  options:
+    fake_slots:
+      enabled: true
+      size: 2022
+  up: "      &b&lAquatic Studios &7| &fAstroCore &7(v1.0.0)"
+  down: " &aDo not forget to leave your 5 stars of the plugin"
+
+permission:
+  server_full: "astrocore.bypass.full"
+  bypass_works: "astrocore.bypass.works"
+
+vocabulary_blocked:
+  - ez
+  - noob
+  - bitch
+
+disable_commands:
+  - calc
+  - //calc
+  - /calc
+  - execute
+  - solve
+  - /solve
+  - //solve
+  - eval
+  - /eval
+  - //eval
+  - p
+  - pl
+  - help
+  - plugins
+  - bukkit:plugins
+  - bukkit:pl
+  - bukkit:?
+  - bukkit:help
+  - ver
+  - version
+  - gc
+  - bukkit:version
+  - bukkit:ver
+
+events:
+  destroy_blocks_event:
+    - Aquatic
+  pvp_block_event:
+    - Aquatic
+  health_event:
+    - Aquatic
+  block_place_event:
+    - Aquatic
+  rain_block_event:
+    - Aquatic
+  explosives_event:
+    - Aquatic
+  block_bucket_flames:
+    - Aquatic
+  food_event:
+    - Aquatic
+  secure_explode:
+    - Aquatic
+  no_drop_items_event:
+    - Aquatic
+  inventory_click_event:
+    - Aquatic
+
+sounds:
+  commands: "LAVA_POP:10:2"
+  join_quit: "CHICKEN_EGG_POP:10:2"
+  vocabulary: "ANVIL_BREAK:10:1"
+  jump_pads_plate_block: "LEVEL_UP:10:2"
+
+joinfireworks:
+  switch: true
+  amount: 4
+  flicker: true
+  trail: true
+  type: BALL_LARGE
+  firework:
+    power: 1
+    colors:
+      - WHITE
+      - AQUA
+    fadecolor:
+      - AQUA
+      - WHITE
+
+jump_pads:
+  switch: true
+  plate_block: "LIGHT_WEIGHTED_PRESSURE_PLATE"
+  plate_block_gold: "GOLD_PLATE"
+
+lobby:
+  experience:
+    switch: true
+    size: 2022
+
+  strike:
+    switch: true
+    permission: "astrocore.lobby.strike"
+
+  gamemode:
+    switch: true
+    mode: SURVIVAL
+
+  join_title:
+    switch: true
+    title: "&b&lAstroCore &7(v1.0.0)"
+    subtitle: "&fWelcome &a%player_name% &fto the Network"
+
+  automatic:
+    switch: true
+    levitation: 5
+    worlds:
+      - Aquatic
+    permission: "astrocore.superfly.automatic"
+    message:
+      switch: true
+      text: "&aYour flight mode has been activated automatically"
+
+commands:
+  tp:
+    switch: true
+    message: "&aYou will be sent to the player &7(%astrocore_name%)"
+    argument_invalid: "&cInvalid argument execute &7/tp (username)"
+    no_tp_player_similar: "&cYou can't teleport yourself"
+    player_no_online: "&cThe player you just entered is not online"
+    no_perm:
+      message: "&cYou do not have the permission to execute this command"
+      titles:
+        enabled: true
+        title: "&c&lERROR"
+        subtitle: "&fYou don't have permissions"
+
+  staff_control:
+    chat:
+      switch: true
+      argument_invalid: "&cInvalid argument execute &7/staffchat (message)"
+      format: "&c[SC] %astrocore_name% &8» &f%message%"
+      no_perm:
+        message: "&cYou do not have the permission to execute this command"
+        titles:
+          enabled: true
+          title: "&c&lERROR"
+          subtitle: "&fYou don't have permissions"
+    join/leave:
+      switch: false
+      message_join: "&c[S] %astrocore_staff% &fjoin the network"
+      message_leave: "&c[S] %astrocore_staff% &fleave the network"
+
+  chat_clear:
+    switch: true
+    sound: LEVEL_UP:10:2
+    no_perm: "&cYou have not permission execute this command"
+    message:
+      - "&aThe chat has been cleaned by &7(%astrocore_name%)"
+
+  broadcast:
+    switch: true
+    argument_invalid: "&cInvalid argument execute &7/broadcast (message)"
+    format: "&b[AstroCore] &r%message%"
+    no_perm:
+      message: "&cYou do not have the permission to execute this command"
+      titles:
+        enabled: true
+        title: "&c&lERROR"
+        subtitle: "&fYou don't have permissions"
+
+  message:
+    switch: true
+    argument_invalid: "&cInvalid argument execute &7/msg (player) (message)"
+    format_msg: "&b[AstroCore] &7(You) &a%astrocore_name% &8» &f%message%"
+    format_msg_recive: "&b[AstroCore] &a%astrocore_name% &8» &7(You) &f%message%"
+    player_not_online: "&cThe player you just entered is not online"
+
+  vanish:
+    switch: true
+    show_staff: "astrocore.show.staff"
+    tab_name:
+      enabled: false
+      format: " &7[Vanish]"
+    active:
+      message: "&aYour invisibility mode was activated"
+      alert: "&b[AstroCore] &aA staff activates its invisibility mode &7(%astrocore_name%)"
+      fake_leave:
+        enabled: true
+        sound: NOTE_PLING:10:2
+        message: "&c[S] %astrocore_name% &fleft the game"
+      titles:
+        enabled: true
+        title: "&b&lVanish"
+        subtitle: "&fActivated"
+    desactive:
+      message: "&cYour invisibility mode was deactivated"
+      alert: "&b[AstroCore] &cA staff disabled his invisibility mode &7(%astrocore_name%)"
+      fake_join:
+        enabled: true
+        sound: ANVIL_BREAK:10:2
+        message: "&c[S] %astrocore_name% &fjoined the game"
+      titles:
+        enabled: true
+        title: "&b&lVanish"
+        subtitle: "&fDisabled"
+    no_perm:
+      message: "&cYou do not have the permission to execute this command"
+      titles:
+        enabled: true
+        title: "&c&lERROR"
+        subtitle: "&fYou don't have permissions"
+
+  superfly:
+    switch: true
+    levitation: 5
+    no_perm:
+      message: "&cYou do not have the permission to execute this command"
+      titles:
+        enabled: true
+        title: "&c&lERROR"
+        subtitle: "&fYou don't have permissions"
+    active:
+      message: "&aYou flight mode has been activated"
+      titles:
+        enabled: true
+        title: "&b&lSuperfly"
+        subtitle: "&fActivated"
+    desactive:
+      message: "&cYou flight mode has been deactivated"
+      titles:
+        enabled: true
+        title: "&b&lSuperfly"
+        subtitle: "&fDisabled"
+
+  gamemode:
+    switch: true
+    argument_invalid: "&cInvalid argument execute &7/gamemode (0,1,2,3)"
+    no_perm:
+      message: "&cYou do not have the permission to execute this command"
+      titles:
+        enabled: true
+        title: "&c&lERROR"
+        subtitle: "&fYou don't have permissions"
+
+
+    survival:
+      enabled: true
+      message: "&aYour game mode has been changed &7(Survival)"
+      titles:
+        enabled: true
+        title: "&b&lGamemode"
+        subtitle: "&fChange mode &7(Survival)"
+
+    creative:
+      enabled: true
+      message: "&aYour game mode has been changed &7(Creative)"
+      titles:
+        enabled: true
+        title: "&b&lGamemode"
+        subtitle: "&fChange mode &7(Creative)"
+
+    spectator:
+      enabled: true
+      message: "&aYour game mode has been changed &7(Spectator)"
+      titles:
+        enabled: true
+        title: "&b&lGamemode"
+        subtitle: "&fChange mode &7(Spectator)"
+
+    adventure:
+      enabled: true
+      message: "&aYour game mode has been changed &7(Adventure)"
+      titles:
+        enabled: true
+        title: "&b&lGamemode"
+        subtitle: "&fChange mode &7(Adventure)"
+
+# DO NOT TOUCH!
+version: "9.0.1"
+
+#  ─█▀▀█ ░█▀▀█ ░█─░█ ─█▀▀█ ▀▀█▀▀ ▀█▀ ░█▀▀█ 　 ░█▀▀▀█ ▀▀█▀▀ ░█─░█ ░█▀▀▄ ▀█▀ ░█▀▀▀█ ░█▀▀▀█
+#  ░█▄▄█ ░█─░█ ░█─░█ ░█▄▄█ ─░█── ░█─ ░█─── 　 ─▀▀▀▄▄ ─░█── ░█─░█ ░█─░█ ░█─ ░█──░█ ─▀▀▀▄▄
+#  ░█─░█ ─▀▀█▄ ─▀▄▄▀ ░█─░█ ─░█── ▄█▄ ░█▄▄█ 　 ░█▄▄▄█ ─░█── ─▀▄▄▀ ░█▄▄▀ ▄█▄ ░█▄▄▄█ ░█▄▄▄█
+#
+# • (Terms and Service) - All rights to the plugin belongs to Aquatic Studios (Sxmuray)

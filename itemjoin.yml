@@ -1,0 +1,40 @@
+# • Create your item are editable just follow the instructions
+example:
+    # • Name the item
+    name: "&bExample &7| &fRight Click"
+    # • Here you can use minecraft ID remember that they are only numbers
+    ID: BOOK
+    # • You can use the item value if you have other properties
+    data: 0
+    # • In the command section you can use: "server, op, tell, console"
+    command: "tell: &b[AstroCore] &fYou just clicked on the example object"
+    # • Allow to move the item
+    allow-drop: false
+    drop-item: false
+    block-movement: true
+    disabled-worlds: world
+    # • Use slot : (1,2,3,4,5,6,7,8,9)
+    slot: 5
+    # • Time to wait to re-click
+    cooldown: 5
+    # • You can Put the Item information
+    lore:
+    - '&fIf you click me I sent a message'
+
+# • This is an example in case you want to implement
+# • An item with another expectation of use
+# • Sea skywars, survival, and many other modes
+
+#other:
+#    name: "&bOther &7| &fRight Click"
+#    ID: COMPASS
+#    data: 0
+#    command: "sw join"
+#    allow-drop: false
+#    block-movement: true
+#    disabled-worlds: world
+#    slot: 1
+#    cooldown: 5
+#    drop-item: false
+#    lore:
+#    - "&fItem example skywars join"

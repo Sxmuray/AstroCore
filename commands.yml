@@ -1,0 +1,10 @@
+example:
+  execute: "example"
+  permission: astrocore.command.example
+  message:
+    - "&b[Aquatic] &fSxmuray: &aThanks for downloading the plugin!"
+
+discord:
+  execute: "discord"
+  message:
+    - "&b[Aquatic] &fJoin the discord &7(discord.gg/XSWWCEhURx)"
